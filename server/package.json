@@ -1,0 +1,20 @@
+{
+  "name": "paybridge-server",
+  "version": "1.0.0",
+  "description": "PayBridge QR Payment Terminal Backend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "lowdb": "^1.0.0",
+    "node-fetch": "^2.6.11",
+    "qrcode": "^1.5.3",
+    "uuid": "^9.0.0"
+  }
+}

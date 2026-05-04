@@ -1,0 +1,206 @@
+/* CSS Variables & Design System */
+:root {
+  --bg: #0a0a0a;
+  --surface: #151515;
+  --surface-alt: #1f1f1f;
+  --accent: #2563eb;
+  --accent2: #f97316;
+  --text: #fafafa;
+  --text-secondary: #a1a1a1;
+  --muted: #666666;
+  --danger: #ef4444;
+  --warn: #f97316;
+  --success: #10b981;
+  --radius: 8px;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Sora', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+button {
+  font-family: 'Sora', sans-serif;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  font-family: 'Sora', sans-serif;
+}
+
+/* Typography */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+/* Monospace for amounts/IDs */
+.mono {
+  font-family: 'DM Mono', monospace;
+}
+
+/* Common Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gap-sm {
+  gap: 0.5rem;
+}
+
+.gap-md {
+  gap: 1rem;
+}
+
+.gap-lg {
+  gap: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-muted {
+  color: var(--text-secondary);
+}
+
+.mb-sm {
+  margin-bottom: 0.5rem;
+}
+
+.mb-md {
+  margin-bottom: 1rem;
+}
+
+.mb-lg {
+  margin-bottom: 2rem;
+}
+
+.mt-sm {
+  margin-top: 0.5rem;
+}
+
+.mt-md {
+  margin-top: 1rem;
+}
+
+.mt-lg {
+  margin-top: 2rem;
+}
+
+.p-sm {
+  padding: 0.5rem;
+}
+
+.p-md {
+  padding: 1rem;
+}
+
+.p-lg {
+  padding: 2rem;
+}
+
+.rounded {
+  border-radius: var(--radius);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--muted);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
